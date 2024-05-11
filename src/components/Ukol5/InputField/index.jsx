@@ -1,4 +1,4 @@
-import './style.css';
+import "./style.css";
 
 export const InputField = ({ label, type, value, onValueChange }) => {
   return (
@@ -7,6 +7,8 @@ export const InputField = ({ label, type, value, onValueChange }) => {
       <input
         className="input-field__input"
         type={type}
+        value={value}
+        onChange={onValueChange}
       />
     </div>
   );
