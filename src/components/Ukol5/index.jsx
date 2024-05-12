@@ -20,13 +20,13 @@ export const Ukol5 = () => {
         label="Jméno"
         type="text"
         value={jmeno}
-        onValueChange={(event) => setJmeno(event.target.value)}
+        onValueChange={setJmeno}
       />
       <InputField
         label="Příjmení"
         type="text"
         value={prijmeni}
-        onValueChange={(event) => setPrijmeni(event.target.value)}
+        onValueChange={setPrijmeni}
       />
     </>
   );

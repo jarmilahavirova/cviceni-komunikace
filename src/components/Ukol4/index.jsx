@@ -24,9 +24,7 @@ export const Ukol4 = () => {
         label="Jméno"
         type="text"
         value={jmeno}
-        onValueChange={(event) => {
-          setJmeno(event.target.value);
-        }}
+        onValueChange={setJmeno}
       />
     </>
   );

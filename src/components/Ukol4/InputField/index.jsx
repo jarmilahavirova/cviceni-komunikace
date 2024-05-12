@@ -8,7 +8,9 @@ export const InputField = ({ label, type, value, onValueChange }) => {
         className="input-field__input"
         type={type}
         value={value}
-        onChange={onValueChange}
+        onChange={(event) => {
+          onValueChange(event.target.value);
+        }}
       />
     </div>
   );
